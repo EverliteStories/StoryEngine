@@ -22,7 +22,6 @@ function getDecisionById(id) {
 
 function renderEnding(endingKey) {
   const ending = state.module.endings[endingKey];
-
   const endingText = renderTemplate(ending.text, state.custom);
 
   storyText.textContent =
@@ -30,24 +29,42 @@ function renderEnding(endingKey) {
     "\n\nCollectible: " + ending.reward.item +
     "\nHook: " + ending.hook;
 
-  choicesBox.innerHTML =
-    `<button onclick="location.reload()">Play Again</button>`;
-}
-
-Collectible: ${ending.reward.item}
-Hook: ${ending.hook}`;
   choicesBox.innerHTML = `<button onclick="location.reload()">Play Again</button>`;
 }
 
 function renderSection(sectionKey) {
+  state.currentSection = sectionKey;
+
   const section = state.module.scenes[sectionKey];
+  if (!section) {
+    storyTitle.textContent = "Error";
+    storyText.textContent = "Could not find " + sectionKey;
+    choicesBox.innerHTML = "";
+    storyCard.classList.remove("hidden");
+    return;
+  }
+
   const variant = section.A;
+  if (!variant) {
+    storyTitle.textContent = "Error";
+    storyText.textContent = "Could not find variant A in " + sectionKey;
+    choicesBox.innerHTML = "";
+    storyCard.classList.remove("hidden");
+    return;
+  }
+
+  const rawText = variant.expanded_text || variant.text || "";
 
   storyTitle.textContent = state.module.metadata.title;
-  storyText.textContent = renderTemplate(variant.text, state.custom);
+  storyText.textContent = renderTemplate(rawText, state.custom);
   storyCard.classList.remove("hidden");
 
   const decision = getDecisionById(variant.next_decision);
+  if (!decision) {
+    choicesBox.innerHTML = "";
+    return;
+  }
+
   choicesBox.innerHTML = `<p>${decision.prompt}</p>`;
 
   decision.choices.forEach(choice => {
@@ -58,35 +75,39 @@ function renderSection(sectionKey) {
   });
 }
 
-function nextSectionKey(current) {
-  const n = Number(current.replace("section", ""));
-  if (n >= 6) return null;
-  return `section${n + 1}`;
-}
-
 function handleChoice(choice) {
   if (["A", "B", "C"].includes(choice.next)) {
     renderEnding(choice.next);
     return;
   }
 
-  const next = choice.next || nextSectionKey(state.currentSection);
-  state.currentSection = next;
-  renderSection(next);
+  renderSection(choice.next);
 }
 
 async function startStory() {
-  state.custom = {
-    child_name: document.getElementById("childName").value.trim() || "Friend",
-    pet_archetype: document.getElementById("petArchetype").value.trim() || "forest guardian",
-    skill_archetype: document.getElementById("skillArchetype").value.trim() || "lightweaving",
-    personality_trait: document.getElementById("personalityTrait").value.trim() || "kind"
-  };
+  try {
+    state.custom = {
+      child_name: document.getElementById("childName").value.trim() || "Friend",
+      pet_archetype: document.getElementById("petArchetype").value.trim() || "forest guardian",
+      skill_archetype: document.getElementById("skillArchetype").value.trim() || "lightweaving",
+      personality_trait: document.getElementById("personalityTrait").value.trim() || "kind"
+    };
 
-  const response = await fetch("./Modules/curtain_of_cozy_stars.json");
-  state.module = await response.json();
+    const response = await fetch("./Modules/curtain_of_cozy_stars.json");
 
-  renderSection("section1");
+    if (!response.ok) {
+      throw new Error("Could not load JSON file. Status: " + response.status);
+    }
+
+    state.module = await response.json();
+
+    renderSection("section1");
+  } catch (error) {
+    storyCard.classList.remove("hidden");
+    storyTitle.textContent = "Something went wrong";
+    storyText.textContent = error.message;
+    choicesBox.innerHTML = "";
+  }
 }
 
 startBtn.addEventListener("click", startStory);
