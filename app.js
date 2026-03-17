@@ -22,8 +22,17 @@ function getDecisionById(id) {
 
 function renderEnding(endingKey) {
   const ending = state.module.endings[endingKey];
+
+  const endingText = renderTemplate(ending.text, state.custom);
+
   storyText.textContent =
-    `${ending.text}
+    endingText +
+    "\n\nCollectible: " + ending.reward.item +
+    "\nHook: " + ending.hook;
+
+  choicesBox.innerHTML =
+    `<button onclick="location.reload()">Play Again</button>`;
+}
 
 Collectible: ${ending.reward.item}
 Hook: ${ending.hook}`;
