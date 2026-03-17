@@ -1,0 +1,114 @@
+{
+  "module_id": "curtain_of_cozy_stars",
+  "engine_version": "1.0.0",
+  "metadata": {
+    "title": "The Curtain of Cozy Stars",
+    "recommended_age": "4-8",
+    "theme_tags": ["restoring harmony"]
+  },
+  "scenes": {
+    "section1": {
+      "A": {
+        "text": "Grandmother Luma smiles as {{child_name}} arrives with a {{pet_archetype}}. Tonight, the stars have become tangled in the sky. Your gift of {{skill_archetype}} may help restore the night.",
+        "next_decision": "decision1"
+      }
+    },
+    "section2": {
+      "A": {
+        "text": "{{child_name}} steps through the Curtain of Cozy Stars. Tiny lights drift like sleepy fireflies.",
+        "next_decision": "decision2"
+      }
+    },
+    "section3": {
+      "A": {
+        "text": "A ribbon of stars has snagged itself on a silver tree branch. Your companion is ready to help.",
+        "next_decision": "decision3"
+      }
+    },
+    "section4": {
+      "A": {
+        "text": "Then you notice the stars are not stuck by accident. They gathered together because the night wind feels lonely.",
+        "next_decision": "decision4"
+      }
+    },
+    "section5": {
+      "A": {
+        "text": "The stars shimmer. The wind listens. This is the moment to choose how harmony returns.",
+        "next_decision": "decision5"
+      }
+    },
+    "section6": {
+      "A": {
+        "text": "The meadow grows still. The stars begin to settle into gentle patterns. The whole Everlight Realm feels softer now.",
+        "next_decision": "decision6"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "id": "decision1",
+      "prompt": "How do you begin?",
+      "choices": [
+        { "label": "Step forward bravely", "effect": { "courage_meter": 1 }, "next": "section2" },
+        { "label": "Pause and look carefully", "effect": { "curiosity_meter": 1 }, "next": "section2" }
+      ]
+    },
+    {
+      "id": "decision2",
+      "prompt": "What matters most right now?",
+      "choices": [
+        { "label": "Explore the meadow", "effect": { "curiosity_meter": 1 }, "next": "section3" },
+        { "label": "Comfort the quiet wind", "effect": { "empathy_meter": 1 }, "next": "section3" }
+      ]
+    },
+    {
+      "id": "decision3",
+      "prompt": "How will you help?",
+      "choices": [
+        { "label": "Use your skill first", "effect": { "courage_meter": 1 }, "next": "section4" },
+        { "label": "Let your pet lead", "effect": { "bond_pet": 1 }, "next": "section4" }
+      ]
+    },
+    {
+      "id": "decision4",
+      "prompt": "What kind of answer does the sky need?",
+      "choices": [
+        { "label": "A brave answer", "effect": { "courage_meter": 1 }, "next": "section5" },
+        { "label": "A gentle answer", "effect": { "empathy_meter": 1 }, "next": "section5" }
+      ]
+    },
+    {
+      "id": "decision5",
+      "prompt": "Choose your final plan",
+      "choices": [
+        { "label": "Guide the stars into place", "effect": { "curiosity_meter": 1 }, "next": "section6" },
+        { "label": "Sing softly with the wind", "effect": { "empathy_meter": 1 }, "next": "section6" }
+      ]
+    },
+    {
+      "id": "decision6",
+      "prompt": "How do you close the night?",
+      "choices": [
+        { "label": "Hold the new charm close", "effect": { "calm_meter": 1 }, "next": "A" },
+        { "label": "Thank the sky and your pet", "effect": { "calm_meter": 1 }, "next": "B" }
+      ]
+    }
+  ],
+  "endings": {
+    "A": {
+      "text": "The stars settle into a glowing curtain once more. Grandmother Luma places a Moon Thread in your hand.",
+      "reward": { "tier": "Rare", "item": "Moon Thread" },
+      "hook": "The Season Door hums."
+    },
+    "B": {
+      "text": "The wind curls happily around you. Grandmother Luma gives you a Glow Pebble to remember this peaceful night.",
+      "reward": { "tier": "Common", "item": "Glow Pebble" },
+      "hook": "The Season Door hums."
+    },
+    "C": {
+      "text": "The sky reveals a hidden pattern, and Grandmother Luma gives you a Pattern Leaf.",
+      "reward": { "tier": "Common", "item": "Pattern Leaf" },
+      "hook": "The Season Door hums."
+    }
+  }
+}
