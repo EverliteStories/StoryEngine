@@ -1,6 +1,6 @@
 {
   "module_id": "curtain_of_cozy_stars",
-  "engine_version": "1.0.0",
+  "engine_version": "1.1.0",
   "metadata": {
     "title": "The Curtain of Cozy Stars",
     "recommended_age": "4-8",
@@ -9,37 +9,37 @@
   "scenes": {
     "section1": {
       "A": {
-        "text": "Grandmother Luma smiles as {{child_name}} arrives with a {{pet_archetype}}. Tonight, the stars have become tangled in the sky. Your gift of {{skill_archetype}} may help restore the night.",
+        "expanded_text": "Grandmother Luma stood beneath the Library Tree, where golden light slipped through the branches in slow, sleepy ribbons. Tiny sparks drifted around her like fireflies made of starlight, and the evening sky above her glowed in a quiet silver hush.\n\nTonight, though, something was different.\n\nThe stars were not spread wide across the sky the way they usually were. They had gathered close together in soft shining clusters, as if they were whispering secrets to one another.\n\nAt {{child_name}}'s side, the {{pet_archetype}} lifted its face and watched the sky with bright, curious eyes. Then it gave a gentle nudge against {{child_name}}'s hand, as if it already knew this was the beginning of something important.\n\nGrandmother Luma smiled, though her eyes looked thoughtful. “The night has become a little tangled,” she said softly. “Not broken. Just out of balance.”\n\nThat made the moment feel strange, but not frightening. More like standing at the edge of a beautiful mystery.\n\nThe branches rustled. The sparks drifted. The whole Everlight Realm seemed to grow still, waiting to see what {{child_name}} would choose next.",
         "next_decision": "decision1"
       }
     },
     "section2": {
       "A": {
-        "text": "{{child_name}} steps through the Curtain of Cozy Stars. Tiny lights drift like sleepy fireflies.",
+        "expanded_text": "{{child_name}} stepped through the Curtain of Cozy Stars and into a meadow washed in soft blue light. The grass shimmered as though moonbeams had settled on every blade, and tiny lights floated through the air in slow, drowsy swirls.\n\nNothing rushed here. Even the breeze seemed to move carefully, as though it did not want to disturb the quiet.\n\nThe {{pet_archetype}} padded ahead, then stopped and looked back, tail twitching with gentle excitement. It seemed to be listening for something hidden beneath the hush.\n\nThen {{child_name}} heard it too.\n\nThe wind was making a sound so soft it was almost a sigh.\n\nHigh above, the stars were still huddled together. Their usual bright paths were missing, and the sky looked less like a song and more like a knot.\n\nIt was lovely. It was mysterious. And it was clear that something needed help.\n\nNearby, the meadow opened into two inviting directions. One seemed full of clues. The other seemed to lead closer to the lonely sound in the wind.\n\nThe night waited gently for {{child_name}} to decide where to begin.",
         "next_decision": "decision2"
       }
     },
     "section3": {
       "A": {
-        "text": "A ribbon of stars has snagged itself on a silver tree branch. Your companion is ready to help.",
+        "expanded_text": "Soon {{child_name}} and the {{pet_archetype}} reached a silver tree standing all by itself in the center of the meadow. Its branches gleamed like polished moonlight, and wrapped around one of them was a ribbon of stars, twisted softly like a shining scarf.\n\nIt was beautiful, but also sad.\n\nThe stars did not sparkle the way they were meant to. They flickered uncertainly, as if they could not decide whether to shine or hide.\n\nThe {{pet_archetype}} moved closer and examined the glowing ribbon carefully. Then it looked up at {{child_name}} with the unmistakable expression of a companion ready to help.\n\nThis was the first true puzzle of the night.\n\nMaybe {{child_name}} could use {{skill_archetype}} to understand what the stars needed. Or maybe this was the moment to trust the pet’s instincts and see what it noticed first.\n\nAbove them, the tangled ribbon trembled in the breeze, as if the stars themselves were waiting to see how they would be helped.",
         "next_decision": "decision3"
       }
     },
     "section4": {
       "A": {
-        "text": "Then you notice the stars are not stuck by accident. They gathered together because the night wind feels lonely.",
+        "expanded_text": "But as {{child_name}} drew closer, something surprising became clear.\n\nThe stars were not tangled because they had been careless.\n\nThey had gathered together on purpose.\n\nA long, quiet breath moved through the meadow, and the night wind whispered again. It did not sound wild or angry. It sounded lonely.\n\nThat was when {{child_name}} understood.\n\nThe stars had wrapped themselves around the silver branch because they were trying to stay close to one another while the wind felt empty and sad. They were not trapped. They were huddling together, unsure how to help.\n\nThe {{pet_archetype}} pressed softly against {{child_name}}'s side, warm and steady.\n\nThis changed everything.\n\nThe sky did not need to be forced back into place. It needed to be understood. The wind did not need to be chased away. It needed comfort, or courage, or a clever new way to feel less alone.\n\nThe meadow grew quiet again, leaving space for a gentler kind of answer.",
         "next_decision": "decision4"
       }
     },
     "section5": {
       "A": {
-        "text": "The stars shimmer. The wind listens. This is the moment to choose how harmony returns.",
+        "expanded_text": "{{child_name}} looked from the trembling ribbon of stars to the waiting wind, then down at the {{pet_archetype}}, who seemed calmer now, as though it trusted that the right choice was close.\n\nAll around them, the Everlight Realm held its breath in the softest way. The silver tree glowed faintly. The drifting lights moved in slow circles. Even the stars seemed to listen.\n\nThis was the turning point.\n\nNot the kind that felt loud or scary. The kind that felt important in a deep, quiet way.\n\n{{child_name}} could guide the stars carefully back into their places, helping the sky remember its beautiful pattern. Or {{child_name}} could answer the wind first, with gentleness and warmth, so the stars would no longer feel they needed to huddle together.\n\nThe {{pet_archetype}} gave one soft, encouraging sound and looked up with shining eyes.\n\nWhatever happened next would shape the whole meadow.\n\nAnd somehow, {{child_name}} knew the night would remember this choice long after the stars were glowing again.",
         "next_decision": "decision5"
       }
     },
     "section6": {
       "A": {
-        "text": "The meadow grows still. The stars begin to settle into gentle patterns. The whole Everlight Realm feels softer now.",
+        "expanded_text": "Little by little, the meadow began to soften.\n\nThe stars loosened from their shining knot. The wind grew gentler. The silver tree hummed with a quiet, peaceful light.\n\nSoon the sky no longer looked tangled at all. It looked restful, as if it had finally found the shape it had been searching for.\n\nThe {{pet_archetype}} settled close beside {{child_name}}, no longer alert and watchful, but calm and content. Its eyes reflected the stars overhead, and its breathing seemed to match the slow, easy rhythm of the night.\n\nGrandmother Luma appeared once more beneath the silver branches. Her smile was warm, proud, and soft around the edges.\n\n“You listened well,” she said. “That is one of the gentlest kinds of magic.”\n\nShe placed a small treasure into {{child_name}}'s hands, something glowing just enough to be lovely, never so much that it disturbed the hush.\n\nFar away, back near the Library Tree, a new shimmer moved across the bark.\n\nAnd somewhere beyond the quiet blue distance, so faint it was almost part of the wind itself, the Season Door hummed.\n\nThe whole Everlight Realm seemed ready for sleep.\n\nWhat kind of adventure do you think the Season Door is waiting to share tomorrow?",
         "next_decision": "decision6"
       }
     }
@@ -49,65 +49,148 @@
       "id": "decision1",
       "prompt": "How do you begin?",
       "choices": [
-        { "label": "Step forward bravely", "effect": { "courage_meter": 1 }, "next": "section2" },
-        { "label": "Pause and look carefully", "effect": { "curiosity_meter": 1 }, "next": "section2" }
+        {
+          "label": "Step forward bravely",
+          "effect": {
+            "courage_meter": 1
+          },
+          "next": "section2"
+        },
+        {
+          "label": "Pause and look carefully",
+          "effect": {
+            "curiosity_meter": 1,
+            "calm_meter": 1
+          },
+          "next": "section2"
+        }
       ]
     },
     {
       "id": "decision2",
       "prompt": "What matters most right now?",
       "choices": [
-        { "label": "Explore the meadow", "effect": { "curiosity_meter": 1 }, "next": "section3" },
-        { "label": "Comfort the quiet wind", "effect": { "empathy_meter": 1 }, "next": "section3" }
+        {
+          "label": "Explore the meadow",
+          "effect": {
+            "curiosity_meter": 1
+          },
+          "next": "section3"
+        },
+        {
+          "label": "Comfort the quiet wind",
+          "effect": {
+            "empathy_meter": 1,
+            "calm_meter": 1
+          },
+          "next": "section3"
+        }
       ]
     },
     {
       "id": "decision3",
       "prompt": "How will you help?",
       "choices": [
-        { "label": "Use your skill first", "effect": { "courage_meter": 1 }, "next": "section4" },
-        { "label": "Let your pet lead", "effect": { "bond_pet": 1 }, "next": "section4" }
+        {
+          "label": "Use your skill first",
+          "effect": {
+            "courage_meter": 1
+          },
+          "next": "section4"
+        },
+        {
+          "label": "Let your pet lead",
+          "effect": {
+            "bond_pet": 1
+          },
+          "next": "section4"
+        }
       ]
     },
     {
       "id": "decision4",
       "prompt": "What kind of answer does the sky need?",
       "choices": [
-        { "label": "A brave answer", "effect": { "courage_meter": 1 }, "next": "section5" },
-        { "label": "A gentle answer", "effect": { "empathy_meter": 1 }, "next": "section5" }
+        {
+          "label": "A brave answer",
+          "effect": {
+            "courage_meter": 1
+          },
+          "next": "section5"
+        },
+        {
+          "label": "A gentle answer",
+          "effect": {
+            "empathy_meter": 1
+          },
+          "next": "section5"
+        }
       ]
     },
     {
       "id": "decision5",
       "prompt": "Choose your final plan",
       "choices": [
-        { "label": "Guide the stars into place", "effect": { "curiosity_meter": 1 }, "next": "section6" },
-        { "label": "Sing softly with the wind", "effect": { "empathy_meter": 1 }, "next": "section6" }
+        {
+          "label": "Guide the stars into place",
+          "effect": {
+            "curiosity_meter": 1
+          },
+          "next": "section6"
+        },
+        {
+          "label": "Sing softly with the wind",
+          "effect": {
+            "empathy_meter": 1
+          },
+          "next": "section6"
+        }
       ]
     },
     {
       "id": "decision6",
       "prompt": "How do you close the night?",
       "choices": [
-        { "label": "Hold the new charm close", "effect": { "calm_meter": 1 }, "next": "A" },
-        { "label": "Thank the sky and your pet", "effect": { "calm_meter": 1 }, "next": "B" }
+        {
+          "label": "Hold the new charm close",
+          "effect": {
+            "calm_meter": 1
+          },
+          "next": "A"
+        },
+        {
+          "label": "Thank the sky and your pet",
+          "effect": {
+            "calm_meter": 1
+          },
+          "next": "B"
+        }
       ]
     }
   ],
   "endings": {
     "A": {
-      "text": "The stars settle into a glowing curtain once more. Grandmother Luma places a Moon Thread in your hand.",
-      "reward": { "tier": "Rare", "item": "Moon Thread" },
+      "text": "The stars settled into a glowing curtain once more, smooth and lovely across the night. Grandmother Luma placed a Moon Thread in {{child_name}}'s hand. It felt warm and light, like a promise made of silver hush.",
+      "reward": {
+        "tier": "Rare",
+        "item": "Moon Thread"
+      },
       "hook": "The Season Door hums."
     },
     "B": {
-      "text": "The wind curls happily around you. Grandmother Luma gives you a Glow Pebble to remember this peaceful night.",
-      "reward": { "tier": "Common", "item": "Glow Pebble" },
+      "text": "The wind curled happily around {{child_name}} and the {{pet_archetype}}, no longer lonely at all. Grandmother Luma gave them a Glow Pebble to remember this peaceful night, and the meadow gleamed with sleepy gratitude.",
+      "reward": {
+        "tier": "Common",
+        "item": "Glow Pebble"
+      },
       "hook": "The Season Door hums."
     },
     "C": {
-      "text": "The sky reveals a hidden pattern, and Grandmother Luma gives you a Pattern Leaf.",
-      "reward": { "tier": "Common", "item": "Pattern Leaf" },
+      "text": "The sky revealed a hidden pattern of quiet beauty, and Grandmother Luma smiled as she gave {{child_name}} a Pattern Leaf. It shimmered gently, as if it still remembered the stars finding their places again.",
+      "reward": {
+        "tier": "Common",
+        "item": "Pattern Leaf"
+      },
       "hook": "The Season Door hums."
     }
   }
