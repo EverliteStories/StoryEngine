@@ -74,7 +74,7 @@ async function startStory() {
     personality_trait: document.getElementById("personalityTrait").value.trim() || "kind"
   };
 
-  const response = await fetch("./modules/curtain_of_cozy_stars.json");
+  const response = await fetch("./Modules/curtain_of_cozy_stars.json");
   state.module = await response.json();
 
   renderSection("section1");
