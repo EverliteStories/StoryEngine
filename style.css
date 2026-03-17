@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f1fb;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #5b4bdb;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+#storyText {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}

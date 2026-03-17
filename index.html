@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everlight Bedtime Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Everlight Bedtime Adventure</h1>
+
+    <section class="card">
+      <label>
+        Child name
+        <input id="childName" type="text" placeholder="Enter name" />
+      </label>
+
+      <label>
+        Pet archetype
+        <input id="petArchetype" type="text" value="forest guardian" />
+      </label>
+
+      <label>
+        Skill archetype
+        <input id="skillArchetype" type="text" value="lightweaving" />
+      </label>
+
+      <label>
+        Personality trait
+        <input id="personalityTrait" type="text" value="kind" />
+      </label>
+
+      <button id="startBtn">Start Story</button>
+    </section>
+
+    <section id="storyCard" class="card hidden">
+      <h2 id="storyTitle"></h2>
+      <p id="storyText"></p>
+      <div id="choices"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
