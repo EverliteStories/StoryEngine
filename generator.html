@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everlight JSON Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f1fb;
+      padding: 20px;
+      color: #222;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    label {
+      display: block;
+      margin-bottom: 12px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 6px;
+    }
+    button {
+      padding: 10px 14px;
+      border: 0;
+      border-radius: 10px;
+      background: #5b4bdb;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-right: 8px;
+    }
+    textarea {
+      min-height: 300px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Everlight JSON Generator</h1>
+
+    <label>
+      Story title
+      <input id="title" value="The Moon Garden" />
+    </label>
+
+    <label>
+      Module id
+      <input id="moduleId" value="moon_garden" />
+    </label>
+
+    <label>
+      Theme
+      <input id="theme" value="growing patience" />
+    </label>
+
+    <label>
+      Ending A reward
+      <input id="rewardA" value="Moon Petal" />
+    </label>
+
+    <label>
+      Ending B reward
+      <input id="rewardB" value="Dewdrop Charm" />
+    </label>
+
+    <label>
+      Ending C reward
+      <input id="rewardC" value="Silver Seed" />
+    </label>
+
+    <button onclick="generateJson()">Generate JSON</button>
+    <button onclick="copyJson()">Copy JSON</button>
+
+    <label>
+      Output
+      <textarea id="output"></textarea>
+    </label>
+  </div>
+
+  <script>
+    function generateJson() {
+      const title = document.getElementById("title").value.trim() || "New Story";
+      const moduleId = document.getElementById("moduleId").value.trim() || "new_story";
+      const theme = document.getElementById("theme").value.trim() || "gentle wonder";
+      const rewardA = document.getElementById("rewardA").value.trim() || "Moon Thread";
+      const rewardB = document.getElementById("rewardB").value.trim() || "Glow Pebble";
+      const rewardC = document.getElementById("rewardC").value.trim() || "Pattern Leaf";
+
+      const story = {
+        module_id: moduleId,
+        engine_version: "1.1.0",
+        metadata: {
+          title: title,
+          recommended_age: "4-8",
+          theme_tags: [theme]
+        },
+        scenes: {
+          section1: {
+            A: {
+              expanded_text: "Grandmother Luma welcomes {{child_name}} into tonight's adventure. The {{pet_archetype}} stays close, and the world feels calm and magical.",
+              next_decision: "decision1"
+            }
+          },
+          section2: {
+            A: {
+              expanded_text: "{{child_name}} explores the new place and notices that something gentle is out of balance.",
+              next_decision: "decision2"
+            }
+          },
+          section3: {
+            A: {
+              expanded_text: "A small puzzle appears. The {{pet_archetype}} seems ready to help, and {{skill_archetype}} may reveal the answer.",
+              next_decision: "decision3"
+            }
+          },
+          section4: {
+            A: {
+              expanded_text: "{{child_name}} realizes the problem is not bad or scary. It is simply something that needs understanding.",
+              next_decision: "decision4"
+            }
+          },
+          section5: {
+            A: {
+              expanded_text: "This is the turning point. The night waits softly while {{child_name}} chooses how to help.",
+              next_decision: "decision5"
+            }
+          },
+          section6: {
+            A: {
+              expanded_text: "The world grows calmer. The problem begins to soften, and the Everlight Realm feels ready for rest.",
+              next_decision: "decision6"
+            }
+          }
+        },
+        decisions: [
+          {
+            id: "decision1",
+            prompt: "How do you begin?",
+            choices: [
+              { label: "Step forward bravely", effect: { courage_meter: 1 }, next: "section2" },
+              { label: "Pause and look carefully", effect: { curiosity_meter: 1, calm_meter: 1 }, next: "section2" }
+            ]
+          },
+          {
+            id: "decision2",
+            prompt: "What matters most right now?",
+            choices: [
+              { label: "Explore", effect: { curiosity_meter: 1 }, next: "section3" },
+              { label: "Comfort first", effect: { empathy_meter: 1 }, next: "section3" }
+            ]
+          },
+          {
+            id: "decision3",
+            prompt: "How will you help?",
+            choices: [
+              { label: "Use your skill", effect: { courage_meter: 1 }, next: "section4" },
+              { label: "Let your pet lead", effect: { bond_pet: 1 }, next: "section4" }
+            ]
+          },
+          {
+            id: "decision4",
+            prompt: "What kind of answer is needed?",
+            choices: [
+              { label: "A brave answer", effect: { courage_meter: 1 }, next: "section5" },
+              { label: "A gentle answer", effect: { empathy_meter: 1 }, next: "section5" }
+            ]
+          },
+          {
+            id: "decision5",
+            prompt: "Choose your final plan",
+            choices: [
+              { label: "Guide the solution", effect: { curiosity_meter: 1 }, next: "section6" },
+              { label: "Wait softly and help", effect: { calm_meter: 1, empathy_meter: 1 }, next: "section6" }
+            ]
+          },
+          {
+            id: "decision6",
+            prompt: "How do you close the night?",
+            choices: [
+              { label: "Hold the gift close", effect: { calm_meter: 1 }, next: "A" },
+              { label: "Thank everyone", effect: { calm_meter: 1, bond_pet: 1 }, next: "B" }
+            ]
+          }
+        ],
+        endings: {
+          A: {
+            text: "The adventure ends in a soft glow. {{child_name}} receives a special gift to remember tonight.",
+            reward: { tier: "Rare", item: rewardA },
+            hook: "The Season Door hums."
+          },
+          B: {
+            text: "Peace returns to the realm, and {{child_name}} receives a gentle treasure.",
+            reward: { tier: "Common", item: rewardB },
+            hook: "The Season Door hums."
+          },
+          C: {
+            text: "A hidden wonder is revealed, and {{child_name}} receives a quiet reward.",
+            reward: { tier: "Common", item: rewardC },
+            hook: "The Season Door hums."
+          }
+        }
+      };
+
+      document.getElementById("output").value = JSON.stringify(story, null, 2);
+    }
+
+    function copyJson() {
+      const output = document.getElementById("output");
+      output.select();
+      document.execCommand("copy");
+      alert("JSON copied");
+    }
+  </script>
+</body>
+</html>
