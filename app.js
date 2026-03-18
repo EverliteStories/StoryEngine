@@ -93,7 +93,8 @@ async function startStory() {
       personality_trait: document.getElementById("personalityTrait").value.trim() || "kind"
     };
 
-    const response = await fetch("./Modules/curtain_of_cozy_stars.json");
+    const selectedStory = document.getElementById("storySelect").value;
+    const response = await fetch("./Modules/" + selectedStory);
 
     if (!response.ok) {
       throw new Error("Could not load JSON file. Status: " + response.status);
