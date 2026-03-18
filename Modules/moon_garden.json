@@ -1,1 +1,199 @@
-
+{
+  "module_id": "moon_garden",
+  "engine_version": "1.1.0",
+  "metadata": {
+    "title": "The Moon Garden",
+    "recommended_age": "4-8",
+    "theme_tags": ["growing patience"]
+  },
+  "scenes": {
+    "section1": {
+      "A": {
+        "expanded_text": "Tonight, Grandmother Luma led {{child_name}} to a quiet gate made of pale silver vines. Beyond it stretched the Moon Garden, where flowers opened only at night and every leaf shone with a soft, sleepy glow.\n\nThe air smelled like cool grass after evening rain. Tiny drops of moonlight clung to the petals like dew.\n\nAt {{child_name}}'s side, the {{pet_archetype}} looked through the gate with bright, eager eyes. It took one small step forward, then turned back as if to say, “Come see.”\n\nGrandmother Luma rested her hand on the gate. “Something in the Moon Garden is waiting,” she said. “Not in a hurry. Not in fear. Just waiting.”\n\nThat made the moment feel gentle and important all at once.\n\nInside, one special blossom had not opened. All around it, the garden was ready. The silver leaves, the glowing paths, the quiet night air—everything seemed to be listening.\n\nSome adventures begin with a loud surprise.\n\nThis one began with stillness.\n\nAnd the Moon Garden seemed ready to show {{child_name}} that even quiet things can hold wonderful secrets.",
+        "next_decision": "decision1"
+      }
+    },
+    "section2": {
+      "A": {
+        "expanded_text": "{{child_name}} stepped into the Moon Garden, and the path beneath their feet gave off a soft pearly light. The flowers swayed slowly, though there was hardly any wind at all.\n\nSome blossoms were wide open, showing golden centers that glimmered like tiny stars. Others were curled up tightly, as if they were still dreaming.\n\nThe {{pet_archetype}} trotted ahead and paused beside a round silver bud resting at the heart of the garden. It was larger than all the others, and unlike the rest, it had not opened.\n\nIt did not seem sick. It did not seem broken.\n\nIt simply stayed closed.\n\nNearby, a line of glowing stepping stones wound toward a little fountain. On the other side, a ring of firefly-lanterns blinked in a slow and thoughtful pattern.\n\nEverything about the garden felt calm, but also full of questions.\n\nWas the unopened flower waiting for water? Waiting for music? Waiting for moonlight? Or perhaps it was waiting for something harder to see.\n\nThe garden held its silver breath, and the next choice seemed ready to shape what would happen.",
+        "next_decision": "decision2"
+      }
+    },
+    "section3": {
+      "A": {
+        "expanded_text": "As {{child_name}} came closer to the great silver bud, a soft chiming sound drifted through the garden. It came from the little fountain, where moonwater fell in slow, clear drops that rang like tiny bells.\n\nThe {{pet_archetype}} leaned toward the flower and then toward the fountain, as if trying to decide which one held the answer. Its ears twitched. Its tail flicked. It was thinking very hard.\n\nThis felt like a moment for {{skill_archetype}}.\n\nMaybe the gift {{child_name}} carried could reveal what the flower needed. Or maybe the {{pet_archetype}} could sense something gentle and hidden that words could not explain.\n\nThe silver bud gave the faintest shiver.\n\nNot opening. Not closing. Just listening.\n\nIt felt a little like waiting outside a door when you know someone inside is deciding whether they are ready to come out.\n\nNothing in the garden felt urgent. But everything felt meaningful.\n\nThis was no longer just about finding an answer.\n\nIt was about noticing the right kind of answer.",
+        "next_decision": "decision3"
+      }
+    },
+    "section4": {
+      "A": {
+        "expanded_text": "Then, as the moonwater chimed again, {{child_name}} began to understand.\n\nThe silver flower was not staying closed because it had forgotten how to bloom.\n\nIt was staying closed because all the other blossoms had opened first.\n\nThe garden was so beautiful, so ready, so bright in its quiet moonlit way, that the last unopened flower had begun to wonder whether there was any reason for it to bloom at all.\n\nIt was not frightened exactly.\n\nIt was unsure.\n\nThe {{pet_archetype}} pressed close to {{child_name}}'s leg, warm and steady. Even the fountain seemed to hush itself, as though it knew this was a delicate thought.\n\nThe flower did not need to be pulled open.\n\nIt did not need to be hurried.\n\nIt needed help remembering that there was still room in the garden for its own kind of beauty.\n\nThe night seemed to soften around that understanding.\n\nAnd now {{child_name}} had a choice—not about forcing a bloom, but about how to gently help it believe it belonged.",
+        "next_decision": "decision4"
+      }
+    },
+    "section5": {
+      "A": {
+        "expanded_text": "{{child_name}} knelt beside the silver flower, careful not to disturb the glowing leaves around it. The garden felt very quiet now, but it was the good kind of quiet—the kind that feels full instead of empty.\n\nThe {{pet_archetype}} settled near the bud and looked up with soft, trusting eyes.\n\nThis was the heart of the adventure.\n\n{{child_name}} could show the flower the patterns of the other blossoms and help it find its place among them. Or {{child_name}} could speak to it gently, letting it know that not every beautiful thing has to bloom at the same time.\n\nThe moon hung overhead like a patient lantern.\n\nThe fountain chimed. The firefly-lanterns blinked in a slow circle. The whole garden seemed to be waiting, not with pressure, but with hope.\n\nSometimes growing means leaping forward.\n\nSometimes growing means taking one soft, brave breath and unfolding when the moment feels right.\n\nThe silver bud trembled once, as if it had heard that thought and was deciding what to do with it.",
+        "next_decision": "decision5"
+      }
+    },
+    "section6": {
+      "A": {
+        "expanded_text": "At last, the Moon Garden changed.\n\nVery slowly, the silver bud began to open.\n\nNot all at once. Not in a burst. One petal lifted, then another, until a gentle glow spread from its center like moonlight pouring into still water.\n\nThe whole garden answered.\n\nThe open flowers shimmered. The fountain gave a brighter chime. Even the path beneath {{child_name}}'s feet seemed softer and warmer, as though it were pleased.\n\nThe {{pet_archetype}} nestled close, peaceful now, its breathing slow and easy.\n\nGrandmother Luma stepped quietly through the silver vines and smiled at the blooming flower. “You helped it in the gentlest possible way,” she said. “You remembered that not everything beautiful arrives at the same time.”\n\nShe placed a small treasure in {{child_name}}'s hands, something cool and glowing, lovely enough to remember and calm enough to carry into sleep.\n\nBehind them, one new vine along the garden gate shimmered with pale light.\n\nAnd somewhere far away in the hush of the Everlight Realm, the Season Door hummed again.\n\nWhat do you think it is waiting to open next?",
+        "next_decision": "decision6"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "id": "decision1",
+      "prompt": "How do you begin in the Moon Garden?",
+      "choices": [
+        {
+          "label": "Walk straight to the silver flower",
+          "effect": {
+            "courage_meter": 1
+          },
+          "next": "section2"
+        },
+        {
+          "label": "Pause and look around carefully",
+          "effect": {
+            "curiosity_meter": 1,
+            "calm_meter": 1
+          },
+          "next": "section2"
+        }
+      ]
+    },
+    {
+      "id": "decision2",
+      "prompt": "What should matter most right now?",
+      "choices": [
+        {
+          "label": "Follow the stepping stones to search for clues",
+          "effect": {
+            "curiosity_meter": 1
+          },
+          "next": "section3"
+        },
+        {
+          "label": "Stay close and quietly comfort the flower",
+          "effect": {
+            "empathy_meter": 1,
+            "calm_meter": 1
+          },
+          "next": "section3"
+        }
+      ]
+    },
+    {
+      "id": "decision3",
+      "prompt": "How will you help the flower?",
+      "choices": [
+        {
+          "label": "Use your skill first",
+          "effect": {
+            "courage_meter": 1
+          },
+          "next": "section4"
+        },
+        {
+          "label": "Trust your pet to notice something hidden",
+          "effect": {
+            "bond_pet": 1
+          },
+          "next": "section4"
+        }
+      ]
+    },
+    {
+      "id": "decision4",
+      "prompt": "What kind of answer does the flower need?",
+      "choices": [
+        {
+          "label": "A brave reminder that it belongs",
+          "effect": {
+            "courage_meter": 1
+          },
+          "next": "section5"
+        },
+        {
+          "label": "A gentle reminder that it can bloom in its own time",
+          "effect": {
+            "empathy_meter": 1
+          },
+          "next": "section5"
+        }
+      ]
+    },
+    {
+      "id": "decision5",
+      "prompt": "Choose your final plan",
+      "choices": [
+        {
+          "label": "Show the flower the garden’s shining pattern",
+          "effect": {
+            "curiosity_meter": 1
+          },
+          "next": "section6"
+        },
+        {
+          "label": "Sing softly and wait with it",
+          "effect": {
+            "empathy_meter": 1,
+            "calm_meter": 1
+          },
+          "next": "section6"
+        }
+      ]
+    },
+    {
+      "id": "decision6",
+      "prompt": "How do you close the night?",
+      "choices": [
+        {
+          "label": "Hold the gift close and watch the flower glow",
+          "effect": {
+            "calm_meter": 1
+          },
+          "next": "A"
+        },
+        {
+          "label": "Thank the garden and your pet for helping",
+          "effect": {
+            "calm_meter": 1,
+            "bond_pet": 1
+          },
+          "next": "B"
+        }
+      ]
+    }
+  ],
+  "endings": {
+    "A": {
+      "text": "The silver flower opened fully at last, and its glow settled over the garden like a soft blanket of moonlight. Grandmother Luma placed a Moon Petal in {{child_name}}'s hand, and it felt cool, smooth, and wonderfully calm.",
+      "reward": {
+        "tier": "Rare",
+        "item": "Moon Petal"
+      },
+      "hook": "The Season Door hums."
+    },
+    "B": {
+      "text": "The garden shimmered with quiet gratitude as {{child_name}} thanked the blossoms and the {{pet_archetype}}. Grandmother Luma gave them a Dewdrop Charm to remember that patient things can still become beautiful things.",
+      "reward": {
+        "tier": "Common",
+        "item": "Dewdrop Charm"
+      },
+      "hook": "The Season Door hums."
+    },
+    "C": {
+      "text": "As the flower unfolded, the firefly-lanterns formed a hidden ring of light around it. Grandmother Luma smiled and gave {{child_name}} a Silver Seed, a tiny treasure that seemed to hold a promise for another quiet wonder to come.",
+      "reward": {
+        "tier": "Common",
+        "item": "Silver Seed"
+      },
+      "hook": "The Season Door hums."
+    }
+  }
+}
